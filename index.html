@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,19 +8,45 @@
     <title>Paint</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <nav>
+        <div class="navbar">
+            <div class="clr" data-clr="#000"></div>
+            <div class="clr" data-clr="#FF0000"></div>
+            <div class="clr" data-clr="#fdec03"></div>
+            <div class="clr" data-clr="#24d102"></div>
+            <div class="clr" data-clr="#0000FF"></div>
+            <div class="clr" data-clr="#fff"></div>
+            <img src="./assets/eraser.png" width="35px" class="clr easer" style="background: none; border: none;"
+                data-clr="#fff" height="35px" alt="easer">
+            <img src="./assets/trash.jpg" width="30px" height="30px" class="clear" id="clear"></img>
+            <img src="./assets/save.png" width="35px" height="35px" class="save"></img>
+
+        </div>
+        <div class="navbar">
+            <button class="draw-3d-cube">Draw 3D edge Cube</button>
+            <button id="drawCylinderBtn">Draw 3D filled Cube</button>
+        </div>
+        <div class="navbar">
+            <p>
+                Use the up-down-right-left arrow keys to rotate the shape in 3D alongth x,y,z axis.
+            </p>
+        </div>
+    </nav>
     <canvas id="canvas"></canvas>
-    <div class="nav">
-        <div class="clr" data-clr="#000"></div>
-        <div class="clr" data-clr="#FF0000"></div>
-        <div class="clr" data-clr="#fdec03"></div>
-        <div class="clr" data-clr="#24d102"></div>
-        <div class="clr" data-clr="#0000FF"></div>
-        <div class="clr" data-clr="#fff"></div>
-        <img src="eraser.png" width="35px" class="clr easer" style="background: none; border: none;" data-clr="#fff" height="35px" alt="easer">
-        <img src="trash.jpg" width="30px" height="30px" class="clear"></img>
-        <img src="save.png" width="35px" height="35px" class="save"></img>
+
+    <div class="bottomBar">
+        <p>
+            This project created by Asim Mahmudov, Telman Gadimov, Mahammad Ahmadov, Murad Bagirli
+        </p>
     </div>
-    <script src="script.js"></script>
+    <script src="common/initShaders.js"></script>
+    <script src="common/MVnew.js"></script>
+    <script src="main.js"></script>
+    <script src="cube.js"></script>
+    <script src="d.js"></script>
+
 </body>
+
 </html>
